@@ -98,8 +98,6 @@ function initCalendar() {
   daysContainer.innerHTML = days;
   addListner();
 }
-
-//function to add month and year on prev and next button
 function prevMonth() {
   month--;
   if (month < 0) {
@@ -122,8 +120,6 @@ prev.addEventListener("click", prevMonth);
 next.addEventListener("click", nextMonth);
 
 initCalendar();
-
-//function to add active on day
 function addListner() {
   const days = document.querySelectorAll(".day");
   days.forEach((day) => {
@@ -131,16 +127,14 @@ function addListner() {
       getActiveDay(e.target.innerHTML);
       updateEvents(Number(e.target.innerHTML));
       activeDay = Number(e.target.innerHTML);
-      //remove active
       days.forEach((day) => {
         day.classList.remove("active");
       });
-      //if clicked prev-date or next-date switch to that month
+
       if (e.target.classList.contains("prev-date")) {
         prevMonth();
-        //add active to clicked day afte month is change
+
         setTimeout(() => {
-          //add active where no prev-date or next-date
           const days = document.querySelectorAll(".day");
           days.forEach((day) => {
             if (
@@ -153,7 +147,6 @@ function addListner() {
         }, 100);
       } else if (e.target.classList.contains("next-date")) {
         nextMonth();
-        //add active to clicked day afte month is changed
         setTimeout(() => {
           const days = document.querySelectorAll(".day");
           days.forEach((day) => {
@@ -352,7 +345,6 @@ addEventSubmit.addEventListener("click", () => {
   addEventFrom.value = "";
   addEventTo.value = "";
   updateEvents(activeDay);
-  //select active day and add event class if not added
   const activeDayEl = document.querySelector(".day.active");
   if (!activeDayEl.classList.contains("event")) {
     activeDayEl.classList.add("event");
@@ -387,20 +379,16 @@ eventsContainer.addEventListener("click", (e) => {
   }
 });
 
-//function to save events in local storage
 function saveEvents() {
   localStorage.setItem("events", JSON.stringify(eventsArr));
 }
 
-//function to get events from local storage
 function getEvents() {
-  //check if events are already saved in local storage then return event else nothing
   if (localStorage.getItem("events") === null) {
     return;
   }
   eventsArr.push(...JSON.parse(localStorage.getItem("events")));
 }
-
 function convertTime(time) {
   let timeArr = time.split(":");
   let timeHour = timeArr[0];

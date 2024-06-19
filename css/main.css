@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: image();
 }
 
 .page {
@@ -17,8 +16,8 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-
 }
+
 .formLogin {
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -29,6 +28,7 @@ body {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
     gap: 5px
 }
+
 .areaLogin img {
     
     font-family: 'Inter', sans-serif;
