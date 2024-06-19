@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding: 15px 15px;
+    background-color: #1A1A1A;
+    color: #F4F4F4;
+    border: 2px solid #F4F4F4;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+button:hover {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
+    color: #1A1A1A;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #F4F4F4;
+    margin-top: 0;
+}
+
+.note {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    background-color: #F4F4F4;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: move;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.note .header {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.note .delete {
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: color 0.3s ease;
+}
+
+.note .delete:hover {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+.social-icons-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-icons-container img {
+    font-family: 'Inter', sans-serif;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container-buttons {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-buttons button {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding: 15px 15px;
+    background-color: #1A1A1A;
+    color: #F4F4F4;
+    border: 2px solid #F4F4F4;
+    cursor: pointer;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.container-buttons button:hover {
+    background-color: #F4F4F4;
+    color: #1A1A1A;
+}
+
+.note .delete {
+    cursor: pointer;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 1px;
+    margin-right: 0px;
+    margin-top: 0px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.color-picker {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1a1a1a;
+    border-radius: 50%;
+    padding: 0;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+.hidden{
+    display: none;
+}
+.menu{
+    position: relative
+}
+.menu-toggle{ 
+    font-family: 'Inter', sans-serif;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0,2s;
+}   
+.menu-items{
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-items li {
+    padding: 10px;
+}
+.menu-items li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.menu-items li a:hover {
+    background-color: rgba(177, 0, 0, 0);
+    transform: scale(1.1);
+}

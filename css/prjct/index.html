@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/login.js" defer></script>
+</head>
+<body>
+    <body>
+    </body>
+    <div class="background-image"></div>
+
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <div id="logado" style="display: none; color: rgb(45, 177, 5);">Logado com sucesso! <br><br></div>
+            <div id="erroLogin" style="display: none; color: rgb(177, 3, 3);">Usuário ou senha inválidos <br><br></div>
+            <label for="userName2">Usuário</label>
+            <input type="text" id="userName2" placeholder="Digite seu usuário" autofocus="true" />
+            <label for="pass2">Senha</label>
+            <input type="password" id="pass2" placeholder="Digite sua senha" />
+            <a href="recuperarSenha.html">Esqueci minha senha</a>
+            <a href="registrarUser.html">Criar uma conta</a>
+            <input type="button" onclick="validaLogin()" value="Acessar" class="btn" />
+            
+        </form>
+    </div>
+    <footer>
+        <div>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contatobrunoberwig@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="#">• Termos de uso</a></li>
+                <li><a href="#">• Política de privacidade</a></li>
+                <li><a href="#">• Sobre nós</a></li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+</body>
+</html>
