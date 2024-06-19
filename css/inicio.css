@@ -16,38 +16,12 @@
     padding: 20px 0;
     flex-flow: wrap;
 }
-#produtos-header{
-    display: flex;
-    background-color: hsl(0, 0%, 100%);
-    color: #fff;
-    padding: 5px;
-    text-align: center;
-}
 #produtos-header h1{
     color: #ff0000;
     text-shadow: 1px 1px #eeeeee;
     padding-top: 15px;
-    /* ............................... */
-    /* padding-left: 130px; */
-    /* ............................... */
     font-size: 30px;
     width: 500px;
-}
-
-/*Grid de Heróis*/
-
-.container{
-    background-color: #000000;
-    min-height: 60vh;
-    padding: 50px;
-}
-
-.products-container{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 #log{
     display: block;
@@ -61,7 +35,6 @@
     background-color: transparent;
     transition: 0.5s;
     margin-left: 0%;
-    /* margin-top: 40px; */
     }
     
     #clog{
@@ -80,43 +53,6 @@
     margin-left: 0%;
     margin-top: 0px;
 }
-.car{
-    display: block;
-    width: 100px;
-    color: #fff;
-    text-align: center;
-    text-transform: lowercase;
-    text-decoration: none;
-    background-color: transparent;
-    /* margin-left: 350px; */
-}
-
-.card{
-    /* width: 31%; */
-    min-width: 300px;
-    display: inline-block;
-    margin: 1% 1%;
-    padding: 15px;
-}
-
-.btn{
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #1206b6;
-    color: #FFF;
-    padding: 15px;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-.btn:hover{
-    background-color: #ffffff;
-}
-
-
 .hidden{
     display: none;
 }
@@ -166,4 +102,32 @@
 .menu-items li a:hover {
     background-color: rgba(177, 0, 0, 0);
     transform: scale(1.1);
+}
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+}
+footer .container{
+    max-width: 1200px;
+    margin: 0 auto
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    display: inline;
+    margin-right: 10px;
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
 }

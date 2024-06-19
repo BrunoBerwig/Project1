@@ -89,7 +89,7 @@ function saveNotesToLocalStorage() {
         content: note.querySelector(".content").innerText,
         top: note.style.top,
         left: note.style.left,
-        color: note.querySelector(".color-picker").value // Retrieve color value from the color picker
+        color: note.querySelector(".color-picker").value
     }));
     localStorage.setItem("stickyNotes", JSON.stringify(notesArray));
 }
@@ -105,7 +105,7 @@ function loadNotesFromLocalStorage() {
             newNote.id = note.id;
             newNote.innerHTML = `
                 <div class="header">
-                    <button class="delete" onclick="deleteStickyNote('${note.id}')" contenteditable="false">Delete</button>
+                    <button class="delete" onclick="deleteStickyNote('${note.id}')" contenteditable="false">apagar</button>
                 </div>
                 <div class="content" contenteditable="true">${note.content}</div>
                 <input type="color" class="color-picker" onchange="changeNoteColor('${note.id}', this.value)" value="${note.color}">
