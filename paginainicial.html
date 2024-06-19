@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <link rel="stylesheet" href="/css/inicio.css">
+    <script src="/js/inicio.js" defer></script>
+</head>
+<body>
+    <header id="produtos-header">
+        <div id="hcont">
+            <button onclick="calendario()" id="log"></button>
+            <button onclick="notas()" id="log">Notas</button>
+            <button onclick="calendario()" id="log">Agenda</button>
+            <button id="log">Finanças</button>
+        </div>
+    </header>
+
+    <div class="menu"></div>
+    <div class="user-initial"></div>
+    <div class="menu-toggle" onclick="toggleMenu()"></div>
+    <ul class="menu-items" id="menuItems">
+        
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Configurações</a></li>
+        <li><a href="index.html">Sair</a></li>
+    </ul>
+</body>
+</html>

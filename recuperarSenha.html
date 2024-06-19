@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <script src="/js/login.js" defer></script>
+    <link rel=" stylesheet" href="/css/registro.css">
+</head>
+<body> 
+    <div class="page">
+        <form name="recuperar" method="POST" class="formLogin" netlify>
+        <h1>Recuperar Senha</h1>
+        <p>Para recuperar sua senha, por favor, preencha o fórmulário abaixo.</p>
+        <div id="erroLogin" style="display: none; color: rgb(170, 0, 0);">Email inválido<br><br></div>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Digite seu email" autofocus="true" />
+        <a href="index.html">Voltar</a>
+        <input type="button" onclick="recuperarSenha()" value="Recuperar senha" class="btn" />
+    </form>
+    </div>
+    <footer>
+        <div>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contatobrunoberwig@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="#">• Termos de uso</a></li>
+                <li><a href="#">• Política de privacidade</a></li>
+                <li><a href="#">• Sobre nós</a></li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+#hcont{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+    flex-flow: wrap;
+}
+#produtos-header{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+#produtos-header h1{
+    color: #ff0000;
+    text-shadow: 1px 1px #eeeeee;
+    padding-top: 15px;
+    /* ............................... */
+    /* padding-left: 130px; */
+    /* ............................... */
+    font-size: 30px;
+    width: 500px;
+}
+
+/*Grid de Heróis*/
+
+.container{
+    background-color: #000000;
+    min-height: 60vh;
+    padding: 50px;
+}
+
+.products-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#log{
+    display: block;
+    width: 100px;
+    /* text-align: center; */
+    color: #000000;
+    padding: 0px;
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize; 
+    background-color: transparent;
+    transition: 0.5s;
+    margin-left: 0%;
+    /* margin-top: 40px; */
+    }
+    
+    #clog{
+    display: block;
+    /* width: 5%; */
+    width: 100px;
+    /* text-align: center; */
+    color: #ffffff;
+    padding: 0px;
+    border: none;
+    font-size: 10px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    background-color: transparent;
+    transition: 0.5s;
+    margin-left: 0%;
+    margin-top: 0px;
+}
+.car{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: none;
+    background-color: transparent;
+    /* margin-left: 350px; */
+}
+
+.card{
+    /* width: 31%; */
+    min-width: 300px;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1206b6;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+}
+
+
+.hidden{
+    display: none;
+}
+.menu{
+    position: relative
+}
+.menu-toggle{ 
+    font-family: 'Inter', sans-serif;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0,2s;
+}   
+.menu-items{
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-items li {
+    padding: 10px;
+}
+.menu-items li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.menu-items li a:hover {
+    background-color: rgba(177, 0, 0, 0);
+    transform: scale(1.1);
+}
